@@ -1,59 +1,198 @@
 ---
-title: "8 Step Initial Setup"
-description: "Enable LIVEVUE and configure your environment"
+title: "LIVEARf Setup Guide"
+description: "Enterprise setup manual for enabling LIVEVUE and configuring LIVEARf."
 ---
 
-# 8 Step Initial Setup
+## Overview
 
-This section guides you through enabling LIVEVUE and preparing your environment.
+LIVEARf is a professional configuration platform built for **artists, photographers, and custom framers**.
+
+It provides structured product management, dynamic pricing control, and real-time frame and mat visualization — enabling customers to preview their final artwork presentation before purchase.
+
+---
+<Callout type="info" title="Estimated Setup Time">
+🎈Be live in under 10 minutes !!
+</Callout>
+---
+
+## Setup Workflow Summary
+
+LIVEVUE activation follows a structured four-phase operational workflow.
+
+<Columns cols={4}>
+
+  <Card 
+    title="Phase 1 — Environment Initialization"
+    icon="play"
+  >
+    Start configuration and generate sample data to establish a controlled test environment.
+  </Card>
+
+  <Card 
+    title="Phase 2 — Business Configuration"
+    icon="user"
+  >
+    Select your operational role and define the appropriate component path.
+  </Card>
+
+  <Card 
+    title="Phase 3 — Template Activation"
+    icon="check-circle"
+  >
+    Create and enable the LIVEVUE template to activate system behavior.
+  </Card>
+
+  <Card 
+    title="Phase 4 — Validation & Deployment"
+    icon="eye"
+  >
+    Link the component to a product and validate visualization and pricing accuracy.
+  </Card>
+
+</Columns>
+
+<Callout type="info">
+All phases must be completed sequentially to ensure successful LIVEVUE activation.
+</Callout>
 
 ---
 
-## Step 1: Start Initial Configuration
+# Enable LIVEVUE (8-Step Onboarding)
 
-On the welcome screen, click **Next** to begin.
+The onboarding process activates LIVEVUE, generates a controlled test environment, and ensures templates and components are properly configured.
 
-## Step 2: Accept Terms & Generate Sample Data
+<Steps>
 
-- Accept terms and conditions  
-- Click **Create**  
-- Sample data and preview products will be generated  
-- Click **Next**
+  <Step title="1. Start Initial Configuration">
+    On the welcome screen, click **Next** to begin system setup.
+  </Step>
 
-## Step 3: Select Your Business Role
+  <Step title="2. Accept Terms & Generate Sample Data">
+    - Accept terms and conditions  
+    - Click **Create** to generate sample data and preview products  
+    - Once complete, click **Next**
 
-Choose one:
-- Artist  
-- Photographer  
-- Custom Framer  
+    <Callout type="tip">
+      Sample data allows validation before publishing live storefront products.
+    </Callout>
+  </Step>
 
-Click **Save**, then **Next**.
+  <Step title="3. Select Your Business Role">
+    Choose your operational role:
+    - Artist  
+    - Photographer  
+    - Custom Framer  
 
-## Step 4: Review Visualization Reference
+    Click **Save**, then **Next**.
+  </Step>
 
-Watch the provided reference video to understand visualization options.
+  <Step title="4. Review Visualization Reference">
+    Review the reference video to understand available visualization behaviors.
 
-Click **Next**.
+    Click **Next** to continue.
+  </Step>
 
-## Step 5: Create a Sample Component
+  <Step title="5. Create a Sample Component">
+    Select the appropriate component:
 
-- Artists & Photographers → Select **Artwork Component**
-- Custom Framers → Select **Upload Component**
+    <Tabs>
+      <Tab title="Artist & Photographer">
+        Select **Artwork Component** for pre-defined artwork products.
+      </Tab>
+      <Tab title="Custom Framer">
+        Select **Upload Component** for customer-upload workflows.
+      </Tab>
+    </Tabs>
 
-Click **Save**.
+    A popup window generates sample frame and mat configurations automatically.  
+    Click **Save** to confirm.
+  </Step>
 
-## Step 6: Create and Enable Template
+  <Step title="6. Create & Enable LIVEVUE Template">
+    - Click **Create** to generate the template  
+    - Select **Enable**  
+    - Confirm by clicking **Save**
 
-- Click **Create**
-- Select **Enable**
-- Click **Save**
+    <Callout type="warning" title="Mandatory">
+      The template must be enabled before linking components to products.
+    </Callout>
+  </Step>
 
-## Step 7: Link Template and Preview
+  <Step title="7. Link Template & Validate Preview">
+    - Use **Switch Template** to link the component to a product  
+    - Click **Preview** to validate visualization and pricing behavior
+  </Step>
 
-- Use **Switch Template**
-- Link to a product
-- Click **Preview**
+  <Step title="8. Setup Complete">
+    LIVEVUE is now active.
 
-## Step 8: Setup Complete
+    You may proceed with advanced configuration or link custom components to live products.
+  </Step>
 
-You are now ready to create custom components and link them to products.
+</Steps>
+
+---
+
+# Optional: Troubleshooting & FAQs
+
+<Accordion title="Preview product does not appear">
+Verify the following:
+• Sample data was successfully generated  
+• LIVEVUE template is enabled  
+• Component is linked to at least one product  
+</Accordion>
+
+<Accordion title="Incorrect visualization or pricing behavior">
+Re-check:
+• Template status  
+• Component configuration  
+• Frame and mat option rules  
+• Product linkage  
+</Accordion>
+
+<Accordion title="Can sample components be replaced?">
+Yes. Sample components are temporary and intended for validation. You may create production-ready components at any time.
+</Accordion>
+
+---
+
+# Next: Continue Setup by Role
+
+# Next: Continue Setup by Role
+
+<Columns cols={2}>
+
+  <Card 
+    title="Artist & Photographer Configuration"
+    icon="palette"
+    href="/artist-and-photographer-setup"
+  >
+    Configure the Artwork Component to manage pre-defined artwork, framing options, and pricing logic.
+  </Card>
+
+  <Card 
+    title="Custom Framer Configuration"
+    icon="frame"
+    href="/custom-framer-setup"
+  >
+    Configure the Upload Component to enable customer image uploads and made-to-order framing workflows.
+  </Card>
+
+</Columns>
+
+
+---
+
+# Glossary
+
+<Accordion title="LIVEVUE">
+The visualization engine within LIVEARf that renders frames, mats, and artwork previews in real time.
+</Accordion>
+
+<Accordion title="Component">
+A configurable module that defines customization options, pricing behavior, and storefront visualization.
+</Accordion>
+
+<Accordion title="Template">
+A configuration layer that connects components to Shopify products.
+</Accordion>

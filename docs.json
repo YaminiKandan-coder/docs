@@ -31,7 +31,8 @@
             "group": "Getting started",
             "pages": [
               "initial-8-step-process",
-              "untitled-page",
+              "artist-and-photographer-setup",
+              "custom-framer-setup",
               "index",
               "quickstart",
               "development"

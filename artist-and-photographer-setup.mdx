@@ -1,0 +1,351 @@
+---
+title: "Artwork Component"
+description: "Complete configuration guide for the Artwork Component in LIVEARf."
+---
+
+## Overview
+
+The **Artwork Component** is designed for artists and photographers selling ready-made artwork with interactive customization options.
+
+It defines:
+
+- Product visualization behavior  
+- Available customization options  
+- Pricing logic  
+- Storefront preview experience  
+
+<Callout type="info" title="Designed For">
+Artists and photographers offering frame and mat customization for fixed artwork.
+</Callout>
+
+---
+
+# 1. Accessing the Artwork Component
+
+![Access Artwork Component](/images/artwork-access.png)
+
+To begin setting up the Artwork Component:
+
+<Steps>
+  <Step title="Open LIVEARf App">
+    Open the **LIVEARf app** from your Shopify admin.
+  </Step>
+
+  <Step title="Navigate to Components">
+    Click **Components**.
+  </Step>
+
+  <Step title="Select Artwork Component">
+    Select **Artwork Component**, or create a new one.
+  </Step>
+
+  <Step title="Open Basic Configuration">
+    Open the **Basic Configuration** tab.
+  </Step>
+</Steps>
+
+You will see:
+
+- A configuration panel on the left  
+- A live **Preview Product** panel on the right  
+
+---
+
+# 2. Component Header Settings
+
+![Component Header Settings](/images/artwork-header.png)
+
+At the top of the configuration screen, define core component behavior.
+
+## Component Name
+- Used for internal identification
+- Not visible on storefront
+
+## Image Upload
+- Enable or disable image upload
+- Typically **disabled** for Artwork Components
+
+## Component Status
+- **ON** → Activates the component  
+- **OFF** → Temporarily disables it  
+
+<Callout type="warning">
+Always click **Save** after making changes.
+</Callout>
+
+---
+
+# 3. Options Panel Overview
+
+![Options Panel Overview](/images/options-panel.png)
+
+The **Options panel** controls which customization choices are available to customers.
+
+---
+
+## 3.1 Shopify Options
+
+- First three options are inherited from Shopify  
+- Represent Shopify product options  
+
+Use the 👁 icon to show or hide each option.
+
+Hidden options will not appear in the Preview Product.
+
+---
+
+## 3.2 Custom Options
+
+By default:
+
+- Frames  
+- Mat Size  
+- Mat Colour  
+
+You can:
+- Edit  
+- Duplicate  
+- Delete  
+
+---
+
+# 4. Configuring an Option
+
+![Configure Option](/images/configure-option.png)
+
+Each option follows a structured configuration flow.
+
+## Step 1 — Select an Option
+Choose an option (e.g., Frames) from the list.
+
+## Step 2 — Define Option Details
+
+- **Option Name** → Internal reference  
+- **Option Label** → Displayed to customers  
+- **Hide Option** → Controls storefront visibility  
+
+## Step 3 — Choose an Option Type
+
+Select how customers interact:
+
+- Swatch  
+- Rectangle  
+- Radio Button  
+- Dropdown  
+- Number  
+- Colour  
+
+The Preview Product updates instantly when option type changes.
+
+---
+
+# 5. Option Values Configuration
+
+Option values represent customer choices.
+
+For each value you can:
+
+- Set a label  
+- Upload or select an image  
+- Choose a default value  
+- Duplicate or delete  
+
+These values appear visually in the Preview Product panel.
+
+---
+
+# 6. Sections and Behavior Control
+
+Assigning a **Section** determines how an option behaves and where it appears.
+
+| Section | Purpose |
+|----------|----------|
+| Frame | Frame visualization and styles |
+| Mat | Mat appearance (visual only) |
+| Canvas | Canvas rendering styles |
+| Acrylic | Acrylic mounting styles |
+| Metal | Metal print styles |
+| Wood | Wood-based finishes |
+| Custom Size | Custom width and height input |
+| Custom Mat Size | Custom mat spacing |
+| Pricing | Pricing adjustments |
+| Additional | Optional add-ons |
+| None | No special behavior |
+
+---
+
+# 7. Actions (When Available)
+
+Some sections enable an **Action dropdown**.
+
+| Section | Available Actions |
+|----------|------------------|
+| Canvas | Classic Wrap, Mirror, Colour, Blur |
+| Acrylic | Spacers, Mount, Sandwich |
+| Metal | Print, Float Mount |
+| Wood | Wooden Pallet, Box Board |
+| Pricing | Discount, Margin, Markup |
+
+If unsupported (e.g., Mat), the action field is disabled.
+
+---
+
+# 8. Mat Size Configuration
+
+![Mat Size Configuration](/images/mat-size.png)
+
+The **Mat Size** option controls spacing between artwork and frame.
+
+Supports:
+
+- First Mat Size  
+- First Mat Style  
+- First Mat Colour  
+- Second Mat Size  
+- Second Mat Style  
+- Second Mat Colour  
+
+Supports both:
+
+- Single mat  
+- Double mat  
+
+All pricing methods are supported via the edit icon.
+
+---
+
+# 9. Mat Colour Configuration
+
+![Mat Colour Configuration](/images/mat-colour.png)
+
+The **Mat Colour** option controls mat color.
+
+- Uses the same six mat actions as Mat Size  
+- Supports all pricing methods  
+- Includes image icon for visual editing  
+
+Changes are reflected immediately in Preview Product.
+
+---
+
+# 10. Pricing Configuration
+
+![Pricing Configuration](/images/pricing-config.png)
+
+Each option value can have pricing applied.
+
+## Pricing Methods
+
+- **Fixed Price** — Flat amount  
+- **Predefined Price** — Value-based pricing  
+- **Surface Area** — Width × Depth  
+- **Perimeter** — Based on edge measurement  
+
+All pricing methods support:
+
+- Tooltip (short explanation)  
+- Description (detailed explanation)  
+
+Use the information (i) icon for measurement guidance.
+
+---
+
+# 11. Advanced Configuration (Conditional Rules)
+
+![Advanced Configuration](/images/advanced-config.png)
+
+Allows dynamic control of option visibility and behavior.
+
+---
+
+## Rule Structure
+
+Each rule follows:
+
+**WHEN** → Condition  
+**IS** → Evaluation  
+**THEN** → Action  
+
+---
+
+## WHEN Conditions
+
+Select Option:
+- Frames  
+- Mat Size  
+- Mat Colour  
+- Custom Options  
+
+Select Condition:
+- Equals to  
+- Not equals to  
+- Greater than  
+- Less than  
+
+Select Value:
+- Any  
+- Specific values  
+
+---
+
+## THEN Actions
+
+- Show  
+- Hide  
+- StrikeOut  
+
+Apply to:
+- All values  
+- Specific values  
+
+---
+
+## Example Rule Scenarios
+
+When Frames = Black → Hide Mat Colour  
+When Mat Size = 2 inch → Show Frames (Gold, White)  
+When Frames = Wood → StrikeOut Black Frame  
+
+---
+
+## Managing Rules
+
+- Duplicate rules  
+- Delete unwanted rules  
+- Add multiple conditions using operators  
+
+Rules execute in listed order.
+
+After updating:
+
+1. Click **Sync**  
+2. Test using Preview Product  
+3. Verify correct show/hide/disable behavior  
+
+---
+
+# 12. Preview and Validation
+
+![Preview and Validation](/images/preview-validation.png)
+
+Before saving:
+
+1. Use the Preview Product panel  
+2. Test different size, frame, and mat combinations  
+3. Verify visual accuracy and pricing behavior  
+
+---
+
+# Saving the Artwork Component
+
+<Steps>
+  <Step title="Review Configurations">
+    Ensure all options and pricing rules are correct.
+  </Step>
+
+  <Step title="Click Save">
+    Click **Save** in the top-right corner.
+  </Step>
+</Steps>
+
+The Artwork Component is now ready to be linked to products and templates.
